@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3dafef048a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="caltemplate.css">
+    </body>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="backgroundheader"></div>
+            <div class="mainheader">
+                <div class="nameheader">
+                    <a href="homepage.html">Beaming.</a>
+                </div>
+                <button class="menu">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <div class="logincontainer">
+                    <a href="login.html">
+                        <button>
+                            <span class="login">log in</span>
+                        </button>
+                    </a>
+                </div>
+                <form class="autocomplete form-inline my-2 my-lg-0" autocomplete="off">
+                    <input id="myInput" autocomplete="off" class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="searchbtn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div class="popup">
+        <div class="popupsmall">
+            <div><a href="topic.html">Health Topics</a></div>
+            <div><a href="news.html">News</a></div>
+            <div><a href="healthcal.html">Health Calculators</a></div>
+            <div><a href="recipe.html">Recipe of the Day</a></div>
+            <div><a href="motivation.html">Boost your Motivation</a></div>
+            <div><a href="journal.html">Health Journal</a></div>
+            <div><a href="aboutus.html">About us</a></div>
+            <div><a href="contact.html">Contact</a></div>
+            <div><a href="attribution.html">Attribution</a></div>
+        </div>
+    </div>
+    <div>
+        <img src="vertbackground.png" alt="">
+    </div>
+    <div class="mainbody">
+        <div class="content">
+            <div class="calculatorside">
+                <div class="measureinput">
+                    <div>
+                        <label for="athlete">Are you an athlete?:</label>
+                        <select name="athlete" id="athlete">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="height">Height (metres):</label>
+                        <input type="text" placeholder="e.g 1.67" id="height">
+                    </div>
+                    <div>
+                        <label for="weight">Weight (kilograms):</label>
+                        <input type="text" placeholder="e.g 60" id="weight">
+                    </div>
+                    <button id="button">Submit</button>
+                </div>
+                <div class="measureoutput">
+                    <div class="result">
+                        <p>Result</p>
+                    </div>
+                    <div class="output">
+                        <div>Your BMI:
+                        </div>
+                        <p id="output"></p>
+                    </div>
+                    <div id="comment" style="width: 380px;"></div>
+                    <div id="advance" style="height: auto;"></div>
+                </div>
+            </div>
+            <div class="infoside">
+                <h1>BMI Calculator - Body Mass Index</h1>
+                <p>By Mateusz Mucha and Aleksandra Zając, MD</p>
+                <p>The BMI calculator is a useful tool that measures whether you are overweight, underweight, or just right. Your weight alone is not enough to tell, as a tall, skinny man may easily weigh more than a short but rotund woman. The body mass index, or BMI, overcomes this problem by finding a ratio of your weight to your height, and returning a single number. This number will fit into a category on the scale of BMI ranges, which are defined as underweight, normal, overweight, and obese.</p>
+                <p>To work out your body mass index on your own, and what the number means for you, you'll need to know:</p>
+                <ul>
+                    <li>How to calculate BMI.</li>
+                    <li>What is normal BMI.</li>
+                    <li>What the various BMI ranges are.></li>
+                </ul>
+                <h2>How to calculate BMI</h2>
+                <p>First, let's cover the calculation:</p>
+                <ul>
+                    <li>Divide your weight (in kilograms) by your height (in meters).</li>
+                    <li>Divide the answer by your height again to get your BMI.</li>
+                </ul>
+                <p>So the body mass index formula is as follows:</p>
+                <p style="background: lightskyblue;">BMI = weight / height².</p>
+                <h2>Normal BMi</h2>
+                <p>Our BMI calculator makes it a piece of cake for you to find your number. However, please remember that BMI is a rough estimation. The result can be somewhat misleading for individuals who are well muscled (such as body builders), or for those who have lost a significant amount of muscle (such as the elderly).</p>
+                <p>If you are unsure whether or not you fall within the "normal" range of muscle mass, please consider using one of our more specialized calculators. The body fat calculator can zero-in on your percentage of body fat, while our lean body mass calculator can tell you how much you would weigh without any fat.</p>
+                <h2>BMI ranges</h2>
+                <p>There are five basic ranges within the BMI scale:</p>
+                <ul>
+                    <li>Underweight = less than 18.5</li>
+                    <li>Normal weight = 18.5 - 24.9</li>
+                    <li>Overweight = 25 - 29.9</li>
+                    <li>Obesity = 30 - 35</li>
+                    <li>Severe obesity = 35 and more</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="top4">
+                <div class="homepage">
+                    <a href="homepage.html">Beaming.</a>
+                </div>
+            </div>
+            <div class="bot4">
+                <div class="column1">
+                    <div class="goals"> Our Goals </div>
+                    <p class="slogan">Beaming. is a health website created with the desire to provide useful information as well as improve people's physical and mental health.</p>
+                </div>
+                <div class="column2">
+                    <div class="aboutus"><a href="aboutus.html">About Us</a></div>
+                    <div class="news"><a href="news.html">News</a></div>
+                    <div class="privacy"><a href="privacy.html">Privacy Policy</a></div>
+                    <div class="terms"><a href="term.html">Terms of Use</a></div>
+                    <div class="attribution"><a href="attribution.html">Attribution</a></div>
+                </div>
+                <div class="column3">
+                    <div class="contact"><a href="contact.html">Contact Us</a></div>
+                    <div class="copyright">©2021 Beaming. All rights reserved. Our website services, content, and
+                        products are for informational purposes only. Beaming. does not provide medical advice,
+                        diagnosis, or treatment.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script>
+        let sex = document.querySelector('#sex')
+        let athlete = document.querySelector('#athlete')
+        let height = document.querySelector('#height')
+        let weight = document.querySelector('#weight')
+        let button = document.querySelector('#button')
+
+        button.addEventListener('click', function () {
+                if(athlete.value == "yes"){
+                    document.getElementById("advance").innerHTML = "Athletes tend to have more muscle tissue, and thus their BMI is usually inaccurate. If you are athletic, you may benefit more from our Lean Body Mass Calculator or our Waist to Hip Ratio than from BMI."
+                }
+                else if(athlete.value == "no"){
+                    document.getElementById("advance").innerHTML = ""
+                }
+            let BMI = weight.value / Math.pow(height.value, 2)
+            if (BMI.toFixed(1)<18.5){
+                document.getElementById("comment").innerHTML = "You are underweight!";
+            }
+             else if (18.5<=BMI.toFixed(1)<=24.9){
+                document.getElementById("comment").innerHTML = "You are healthy!";
+            }
+            else if (25<=BMI.toFixed(1)<=29.9){
+                document.getElementById("comment").innerHTML = "You are overweight!";
+            }
+            else if (30<=BMI.toFixed(1)<=35){
+                document.getElementById("comment").innerHTML = "You are obese!";
+            }
+            else if (BMI.toFixed(1)>35){
+                document.getElementById("comment").innerHTML = "You are severely obese!";
+            }
+            document.getElementById("output").innerHTML = BMI.toFixed(1);
+        });
+    </script>
+</body>

@@ -1,0 +1,442 @@
+body {
+    left: 200px;
+    top: 200px;
+    font-family: 'Lora', serif;
+}
+.header{
+  position: sticky;
+  width: 100%;  
+  height: auto;
+  top: 0;
+  z-index: 402;
+}
+header{
+    position: relative;
+    align-items: center;
+    padding: 8px 0;
+    width: 100%;
+    height: 70px;
+}
+.backgroundheader{
+    background-color:#04BFBF;
+    border-bottom: 1px solid #026873;
+    bottom: 0px;
+    left: 0;
+    position:absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+.mainheader{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    justify-content: flex-start;
+}
+.nameheader{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-left: 0;
+    position:absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    order: -1;
+}
+.nameheader a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #026873;
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+.menu{
+    background-color: transparent;
+    color: #026873;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    order: 0;
+    margin-left: 124px;
+}
+.menu:hover{
+    color: #FF754A;
+    cursor: pointer;
+}
+.popup{
+   background-color:rgb(185, 238, 231) ; 
+   width: 98.8%;
+   height: 100vh;
+   position: absolute;
+   opacity:0;
+   z-index: 1;
+   transform: translateY(-53rem);
+    transition: all .5s ease-in-out;
+}
+.after{
+            opacity: 1;
+            transform: translateY(0rem);
+        }
+.mainbodyafter{
+    display: none;
+}
+.popup a{
+    color:#026873;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 25px;
+    font-family:'Lora', serif ;
+    line-height: 55px;
+}
+.popup a:hover{
+    color: tomato;
+}
+.popupsmall{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 124px;
+    margin-right: 124px;
+}
+.popupsmall div{
+    border-bottom: .5px solid #026873;
+    width: 340px;
+    align-items: center;
+    margin-top: 50px;
+}
+.popupsmall div:hover{
+    border-bottom: .5px solid tomato;
+}
+.logincontainer{
+    margin-left: 40px;
+}
+.logincontainer button{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    color: #026873;
+}
+.logincontainer button:hover{
+    color: #FF754A;
+    cursor: pointer;
+}
+#myInput {
+    border: 1px solid #dcdbdb;;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-family: 'Lora', serif;
+    padding-left: 10px;
+    width: 200px;
+    height: 40px;
+  }
+.searchbtn{
+    background-color:transparent;
+    border: none;
+    font-size:20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 40px;
+    cursor: pointer;
+    color: #026873;
+}
+  .autocomplete {
+    position: relative;
+    display: inline-block;
+   margin-left: 745px;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 30vh;
+    overflow-y: auto;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+.mainbody{
+    margin-left: 124px;
+    margin-right: 124px;
+}
+.pageintro{
+    position: relative;
+}
+.introtext{
+    position: absolute;
+    top: 35px;
+    left: 124px;
+    width: 888px;
+}
+.pageintro h1{
+    color: white;
+    font-size: 40px;
+    line-height: 50px;
+}
+.pageintro p{
+    color: white;
+    font-weight: 400;
+}
+.pageintro img{
+   width: 1333px;
+  height: 320px;
+}
+.pageintroafter{
+    display: none;
+}
+.newspage{
+    display: flex;
+}
+.ad{
+    width: 300px;
+    margin-left: 35px;
+}
+.ad p{
+    text-align: center;
+    color: lightgray;
+    font-size: 12px;
+    margin-top: 80px;
+}
+.newscontainer{
+    display: flex;
+    width: 750px;
+    height: 184px;
+    margin-top: 40px;
+}
+.newsimage{
+    width: 245px;
+    height: 184px;
+}
+.newsimage img{
+    width: 245px;
+    height: 184px;
+}
+.description{
+    margin-left: 25px;
+    width: 449px;
+}
+.newstitle{
+text-decoration: none;
+color: black;
+font-size: 28px;
+line-height: 34px;
+font-weight: 700;
+display: block;
+margin-bottom: 15px;
+}
+.newstitle:hover{
+    color: #FF754A;
+}
+.newsdescription a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 16px;
+}
+footer {
+    background-color: #04BFBF;
+    display: block;
+    font-family: 'Lora', serif;
+    margin-top: 200px;
+}
+.top4 {
+    margin: 0 0 60px;
+    display: flex;
+    flex-direction: row;
+}
+.top4 .homepage {
+    display: inline-block;
+}
+.homepage{
+    margin-left: 116.5px;
+    margin-top: 50px;
+}
+.homepage a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #026873;
+    text-align: center;
+    font-family: 'Ultra', serif;
+}
+.bot4{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 116.5px;
+    margin-right: 116.5px;
+}
+.goals{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+}
+.slogan{
+    font-size: 16px;
+    line-height: 26px;
+}
+.bot4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+}
+.bot4 a:hover{
+    color: tomato;
+}
+.column2{
+    width: 150px;
+    margin-left: 20px;
+}
+.column2 div{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.column3 div{
+    margin-bottom: 20px;
+}
+::-webkit-scrollbar {
+    background-color:#fff;
+    width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+    background-color:#fff
+}
+::-webkit-scrollbar-track:hover {
+    background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+    background-color:#babac0;
+    border-radius:16px;
+    border:5px solid #fff
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color:#a0a0a5;
+    border:4px solid #f4f4f4
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
+    
+/*Article template*/
+.articlepage{
+    display: flex;
+}
+.article{
+    width: 800px;
+    border-bottom: solid 1px #dcdbdb;
+}
+.article p{
+    margin-bottom: 25px;
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 26px;
+}
+.article figure{
+    margin-left: 0;
+}
+.article h1{
+    font-size: 50px;
+    line-height: 54px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.authors{
+    text-decoration: underline;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.articletopic{
+    color: #04BFBF;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+/*recipe*/
+.checkbox div{
+    margin: 10px;
+}
+.checkbox div label{
+    cursor: pointer;
+}
+.checkbox div label input[type="checkbox"]{
+    display: none;
+}
+.checkbox div label span{
+    position: relative;
+    display: inline-block;
+    background: white;
+    padding: 15px 30px;
+    color: #04BFBF;
+    text-shadow: 0 .5px 1.2px rgb(166, 192, 218) ;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.5s;
+    user-select: none;
+    overflow: hidden;
+}
+.checkbox div label span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background:rgba(108, 196, 223, 0.048) ;
+} 
+.checkbox div label input[type="checkbox"]:checked ~ span
+{
+    background: rgb(250, 123, 101);
+    color: white;
+}
+#submitbutton{
+    height: 40px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color:#04BFBF;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.todayrecipe embed{
+    opacity: 1;
+    width:100%; 
+    height: 350px; 
+    margin-top: 50px;
+}
+.checkboxafter{
+    opacity: 1;
+}
+    

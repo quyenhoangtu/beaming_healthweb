@@ -1,0 +1,131 @@
+.content{
+    display: flex;
+    position: absolute;
+   top: 186px;
+   max-height: 800px;
+}
+.measureinput{
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 6px 19px 23px 1px rgb(0 0 0 / 15%);
+}
+.measureinput div{
+    border-bottom: 1px solid #f0f0f0;
+    height: 50px;
+    display: -webkit-inline-box;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    border-radius: 4px;
+}
+.measureinput label{
+    margin-left: 16px;
+    line-height: 1.5;
+    height: 50px;
+}
+.measureinput select{
+    height: 48px;
+    border: 0;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: inherit;
+    display: block;
+    margin-right: 10px;
+}
+.measureinput input{
+    text-align: right;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    line-height: 48px;
+    height: 48px;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    display: block;
+    margin-right: 10px;
+}
+#button{
+    line-height: 50px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color:#04BFBF;
+    font-weight: 500;
+    color: white;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#button:hover{
+    color: teal;
+}
+.measureoutput{
+    margin-top: 30px;
+    width: 417px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 6px 19px 23px 1px rgb(0 0 0 / 15%);
+}
+.measureoutput div{
+    border-bottom: 1px solid #f0f0f0; 
+    border-radius: 4px;
+    height: 50px;
+    display: -webkit-box;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+}
+.result{
+    background-color: #04BFBF;  
+}
+.result p{
+    text-align: center;
+    color: white;
+    width: 417px;
+    height: 50px;
+    font-size: 20px;
+    line-height:0.5;
+    font-weight: 500;
+}
+.output{
+    display: flex;
+}
+.output div{
+    margin-left: 16px;
+    line-height: 1.5;
+    height: 50px;
+    width:140px;
+}
+#output{
+    border: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: inherit;
+    display: block;
+    text-align: right;
+    width: 241px;
+    margin-right: 10px;
+}
+#comment{
+    margin-left: 16px;
+    line-height: 1.5;
+}
+#advance{
+    margin-left: 16px;
+    line-height: 1.5; 
+    max-width: 390px;
+}
+.infoside{
+    overflow: auto;
+    max-width: 600px;
+    margin: 0 40px;
+    max-height: 600px;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe of the Day</title>
+    <link rel="stylesheet" href="template.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3dafef048a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    </body>
+</head>
+
+<body>
+    <div class="header">
+        <header>
+            <div class="backgroundheader"></div>
+            <div class="mainheader">
+                <div class="nameheader">
+                    <a href="homepage.html">Beaming.</a>
+                </div>
+                <button class="menu">
+                    <i class="fas fa-bars fa-2x"></i>
+                </button>
+                <div class="logincontainer">
+                    <a href="login.html">
+                        <button>
+                            <span class="login">log in</span>
+                        </button>
+                    </a>
+                </div>
+                <form class="autocomplete form-inline my-2 my-lg-0" autocomplete="off">
+                    <input id="myInput" autocomplete="off" class="form-control mr-sm-2" type="search"
+                        placeholder="Search" aria-label="Search">
+                    <button class="searchbtn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+        </header>
+    </div>
+    <div class="popup">
+        <div class="popupsmall">
+            <div><a href="topic.html">Health Topics</a></div>
+            <div><a href="news.html">News</a></div>
+            <div><a href="healthcal.html">Health Calculators</a></div>
+            <div><a href="recipe.html">Recipe of the Day</a></div>
+            <div><a href="motivation.html">Boost your Motivation</a></div>
+            <div><a href="journal.html">Health Journal</a></div>
+            <div><a href="aboutus.html">About us</a></div>
+            <div><a href="contact.html">Contact</a></div>
+            <div><a href="attribution.html">Attribution</a></div>
+        </div>
+    </div>
+    <div class="pageintro">
+        <img src="introbackground.png" alt="introbackground">
+        <div class="introtext">
+            <h1>Recipe of the Day</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum explicabo sint iste cumque fugiat,
+                asperiores quas, assumenda aperiam architecto itaque cum officia veritatis eaque, ea delectus unde.
+                Adipisci, possimus sunt!</p>
+        </div>
+    </div>
+    <div class="mainbody">
+        <iframe style="margin-left:300px; margin-top: 50px;" src="https://giphy.com/embed/Jkk64Xj64mcfu" width="480"
+            height="258" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p><a href="https://giphy.com/gifs/food-fire-Jkk64Xj64mcfu" style="color:teal; margin-left: 47%; font-size: 10px;">via GIPHY</a>
+        </p>
+        <h1>Hi, what's the recipe today?</h1>
+        <div class="checkbox">
+        <div class="mealcheckbox">
+            <h2>What's type of food are you looking for?</h2>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Breakfast</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Main Course</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Snacks</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Dessert</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Appetizer</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Smoothie</span>
+            </label>
+        </div>
+        <div class="cuisinecheckbox">
+            <h2>What are your favorite cuisines?</h2>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>American</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Italian</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Vietnamese</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Korean</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Japanese</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Mexican</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>French</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Chinese</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>English</span>
+            </label>
+        </div>
+        <div class="dietcheckbox">
+            <h2>Do you follow any diets?</h2>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Vegetarian</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Vegan</span>
+            </label>
+            <label>
+                <input type="checkbox" name="" id="">
+                <span>Ketogenic</span>
+            </label>
+        </div>
+        <h3>Press the submit button and we will recommend your recipe of the day!</h3>
+        <button id="submitbutton">Submit</button>
+    </div>
+    <div class="todayrecipe">
+        <embed src="" type="">
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="top4">
+                <div class="homepage">
+                    <a href="homepage.html">Beaming.</a>
+                </div>
+            </div>
+            <div class="bot4">
+                <div class="column1">
+                    <div class="goals"> Our Goals </div>
+                    <p class="slogan">Beaming. is a health website created with the desire to provide useful information as well as improve people's physical and mental health.</p>
+                </div>
+                <div class="column2">
+                    <div class="aboutus"><a href="aboutus.html">About Us</a></div>
+                    <div class="news"><a href="news.html">News</a></div>
+                    <div class="privacy"><a href="privacy.html">Privacy Policy</a></div>
+                    <div class="terms"><a href="term.html">Terms of Use</a></div>
+                    <div class="attribution"><a href="attribution.html">Attribution</a></div>
+                </div>
+                <div class="column3">
+                    <div class="contact"><a href="contact.html">Contact Us</a></div>
+                    <div class="copyright">©2021 Beaming. All rights reserved. Our website services, content, and
+                        products are for informational purposes only. Beaming. does not provide medical advice,
+                        diagnosis, or treatment.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</body>
